@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oviumzone</groupId>
@@ -9,26 +9,25 @@
     <version>1.0-SNAPSHOT</version>
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <mahout.version>0.5-cdh3u4</mahout.version>
+    <mahout.version>0.9-cdh5.2.3</mahout.version>
 </properties>
 <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.10</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.10</version>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.1</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.collections</groupId>
             <artifactId>google-collections</artifactId>
@@ -52,12 +51,12 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>0.20.2-cdh3u4</version>
+            <version>2.5.0-mr1-cdg5.2.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.avro</groupId>
             <artifactId>avro</artifactId>
-            <version>1.7.2</version>
+            <version>1.7.6-cdh5.2.3</version>
         </dependency>
         <dependency>
             <groupId>commons-cli</groupId>
@@ -67,7 +66,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.2</version>
+            <version>4.12</version>
         </dependency>
     </dependencies>
 </dependencyManagement>
@@ -81,8 +80,8 @@
         <artifactId>slf4j-log4j12</artifactId>
     </dependency>
     <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
     </dependency>
     <dependency>
         <groupId>org.apache.avro</groupId>
@@ -157,7 +156,7 @@
         <url>https://repository.apache.org/content/repositories/releases/</url>
     </repository>
     <repository>
-        <id>cdh</id>
+        <id>cloudera</id>
         <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
 </repositories>
