@@ -46,12 +46,17 @@
         <dependency>
             <groupId>org.apache.mahout</groupId>
             <artifactId>mahout-utils</artifactId>
-            <version>${mahout.version}</version>
+            <version>0.5</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>2.5.0-mr1-cdg5.2.3</version>
+            <version>2.5.0-mr1-cdh5.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.5.0-cdh5.2.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.avro</groupId>
@@ -116,6 +121,10 @@
     <dependency>
         <groupId>org.apache.hadoop</groupId>
         <artifactId>hadoop-client</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-common</artifactId>
     </dependency>
     <dependency>
         <groupId>junit</groupId>
